@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import url(//db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold);
+
+:root{
+    --fontelol: "BeaufortforLOL-Bold", Arial, Verdana, Helvetica, sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: content-box;
+}
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontelol);
+    box-sizing: content-box !important;
+   
+    
+    /*word-wrap: break-word;
+    overflow-wrap: break-word;*/
+}
+/*main{
+    
+}*/
+
+
+.camille, .gangplank, .jax{
+    margin: 0 auto;
+    background-color: #000913;
+    /*width: 100vw;
+    height: 100vh;*/
+}
+
+.camille-content, .gangplank-content, .jax-content{
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+.camille-content > p, .gangplank-content > p, .jax-content > p{
+    text-align:justify;
+    text-indent: 20px;
+    color: white;
+    font-size: 1.3vw;
+    padding-bottom: 30px;
+}
+
+.camille-content > h1, h2, .gangplank-content > h1, h2, .jax-content > h1, h2 {
+    text-align: center;
+    padding: 20px;
+    font-variant: small-caps;
+    color: rgb(103, 71, 31);
+    font-size: 3vw;
+}
+
+/* 
+    EFEITO PARALLAX AQUI
+*/
+
+.piltover{
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+    background-image: url(../images/piltover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.piltover::after{
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, #000 100%);
+}
+
+.bilgewater{
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+    background-image: url(../images/bilgewater.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bilgewater::after{
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, #000 100%);
+}
+
+
+.icathia{
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+    background-image: url(../images/icathia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icathia::after{
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, #000 100%);
+}
+
+
+.piltover > h1, .bilgewater > h1, .icathia > h1{
+    color: white;
+    text-shadow: 11px 7px 20px black;
+    font-size: 8vw;
+    font-variant: small-caps;
+    font-weight: bolder;
+
+}
+picture > img{
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 20px;
+}
+picture{
+    display: flex;
+}
+
